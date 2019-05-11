@@ -1,5 +1,5 @@
-public class Money {
-    private final int amount;
+public class Money implements Expression {
+    public final int amount;
     private final String currency;
 
     static Money dollar(int amount) {
@@ -10,14 +10,25 @@ public class Money {
         return new Money(amount, "CHF");
     }
 
-    private Money(int amount, String currency) {
+    Money(int amount, String currency) {
         this.amount = amount;
         this.currency = currency;
     }
 
 
-    Money times(int multiplier) {
+    public Expression times(int multiplier) {
         return new Money(this.amount * multiplier, this.currency);
+    }
+
+
+    public Expression plus(Expression addend) {
+        return new Sum(this, addend);
+    }
+
+    @Override
+    public Money reduce(Bank bank, String to) {
+        int rate = bank.rate(this.currency, to);
+        return new Money(amount / rate, to);
     }
 
     @Override
