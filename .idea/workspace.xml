@@ -354,7 +354,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557539083354" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557539749229" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -371,7 +371,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.MoneyTest">
     <configuration name="All in multi-currency-money_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="multi-currency-money_test" />
       <option name="PACKAGE_NAME" value="" />
@@ -380,8 +380,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MoneyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="multi-currency-money_test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MoneyTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.All in multi-currency-money_test" />
+      <item itemvalue="JUnit.MoneyTest" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MoneyTest" />
         <item itemvalue="JUnit.All in multi-currency-money_test" />
       </list>
     </recent_temporary>
